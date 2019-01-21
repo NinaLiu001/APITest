@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<rootUrl>http://preview.airwallex.com:30001</rootUrl>
+	<headers>
+		<header name="Content-Type" value="application/json"></header>
+	</headers>
+	<params>
+		<param name="account_name2" value="value"></param>
+	</params>
+	<project_name>接口自动化测试报告</project_name>
+</root>

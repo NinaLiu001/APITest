@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[api config path:C:\Users\Administrator\workspace\APIAutoTest-master (1)\APIAutoTest-master\api-config.xml]]>
+    </line>
+    <line>
+      <![CDATA[method:post]]>
+    </line>
+    <line>
+      <![CDATA[url:http://preview.airwallex.com:30001/bank]]>
+    </line>
+    <line>
+      <![CDATA[param:{"payment_method": "LOCAL","bank_country_code": "US","account_name":"5o","account_number": "123","swift_code": "ICBCUSBJ","aba": "11122233A"}]]>
+    </line>
+    <line>
+      <![CDATA[resp:{"success":"Bank details saved"}]]>
+    </line>
+    <line>
+      <![CDATA[验证数据： ]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2074" started-at="2019-01-21T14:03:12Z" finished-at="2019-01-21T14:03:15Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2074" started-at="2019-01-21T14:03:12Z" finished-at="2019-01-21T14:03:15Z">
+      <class name="test.com.sen.api.ApiTest">
+        <test-method status="PASS" signature="prepareForTest(java.lang.String, java.lang.String)[pri:0, instance:test.com.sen.api.ApiTest@68c4039c]" name="prepareForTest" is-config="true" duration-ms="1194" started-at="2019-01-21T22:03:12Z" finished-at="2019-01-21T22:03:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[case/api-data.xls]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sheet1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[api config path:C:\Users\Administrator\workspace\APIAutoTest-master (1)\APIAutoTest-master\api-config.xml]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="PASS" signature="apiTest(com.sen.api.beans.ApiDataBean)[pri:0, instance:test.com.sen.api.ApiTest@68c4039c]" name="apiTest" duration-ms="818" started-at="2019-01-21T22:03:14Z" data-provider="apiDatas" finished-at="2019-01-21T22:03:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[desc:account_name is 2 random characters,method:post,url:/bank,param:{
+"payment_method": "LOCAL",
+"bank_country_code": "US",
+"account_name":"${account_name2}",
+"account_number": "123",
+"swift_code": "ICBCUSBJ",
+"aba": "11122233A"
+}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[method:post]]>
+            </line>
+            <line>
+              <![CDATA[url:http://preview.airwallex.com:30001/bank]]>
+            </line>
+            <line>
+              <![CDATA[param:{"payment_method": "LOCAL","bank_country_code": "US","account_name":"5o","account_number": "123","swift_code": "ICBCUSBJ","aba": "11122233A"}]]>
+            </line>
+            <line>
+              <![CDATA[resp:{"success":"Bank details saved"}]]>
+            </line>
+            <line>
+              <![CDATA[验证数据： ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- apiTest -->
+      </class> <!-- test.com.sen.api.ApiTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
